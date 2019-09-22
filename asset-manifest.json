@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/weather-wardrobe/static/css/main.34de6062.chunk.css",
+    "main.js": "/weather-wardrobe/static/js/main.35423154.chunk.js",
+    "main.js.map": "/weather-wardrobe/static/js/main.35423154.chunk.js.map",
+    "runtime-main.js": "/weather-wardrobe/static/js/runtime-main.c142b1e6.js",
+    "runtime-main.js.map": "/weather-wardrobe/static/js/runtime-main.c142b1e6.js.map",
+    "static/js/2.2a098cf8.chunk.js": "/weather-wardrobe/static/js/2.2a098cf8.chunk.js",
+    "static/js/2.2a098cf8.chunk.js.map": "/weather-wardrobe/static/js/2.2a098cf8.chunk.js.map",
+    "index.html": "/weather-wardrobe/index.html",
+    "precache-manifest.1029f75e8af728d70e607e8f1c8b3385.js": "/weather-wardrobe/precache-manifest.1029f75e8af728d70e607e8f1c8b3385.js",
+    "service-worker.js": "/weather-wardrobe/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/weather-wardrobe/static/css/main.34de6062.chunk.css.map"
+  }
+}
