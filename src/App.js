@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Wardrobe from './wardrobe';
 
 class App extends Component {
 
@@ -36,12 +37,15 @@ class App extends Component {
 
     let highTemp;
     let lowTemp;
+    let weatherID
 
     if (this.state.conditions) {
+      weatherID = this.state.conditions.weather[0].id;
       highTemp = this.state.conditions.main.temp_max;
       lowTemp = this.state.conditions.main.temp_min;
+    } else {
+      return <h1>Loading</h1>
     }
-
 
     return (
       <div className="card">
@@ -51,6 +55,11 @@ class App extends Component {
           <h5>Today's Conditions in Denver</h5>
           <h6>High: {highTemp}°F</h6>
           <h6>Low: {lowTemp}°F</h6>
+          <Wardrobe 
+            highTemp = {highTemp}
+            lowTemp = {lowTemp}
+            weatherID = {weatherID}
+          />
         </div>
       </div>
     );
