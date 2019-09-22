@@ -14,6 +14,10 @@ class Wardrobe extends Component {
         let selectedOuterwear = "";
         let weatherIDCategory = this.props.weatherID.toString().split("")[0];
 
+        const style = {
+            alignItems: 'center'
+        }
+
         //Find tops
         if (this.props.lowTemp > 75){
             selectedTop = "T-Shirt";
@@ -39,20 +43,19 @@ class Wardrobe extends Component {
         }
 
         return (
-        <div className="card">
-            {selectedOuterwear !== "" ? (
-                <div>
-                    <h5>OUTERWEAR</h5>
-                    <h1>{selectedOuterwear}</h1>
-                </div>
-            ) : ("")}
-            <h5>TOPS</h5>
-                <h1>{selectedTop}</h1>
-            <h5>BOTTOMS</h5>
-                {this.props.lowTemp > 65 ? 
-                    <h1>Shorts</h1> : <h1>Pants</h1>
-            }
-        </div>
+            <div className="card" style = {style}>
+                {selectedOuterwear !== "" ? (
+                    <div>
+                        <h1>{selectedOuterwear}</h1>
+                        <h4>&</h4>
+                    </div>
+                ) : ("")}
+                    <h1>{selectedTop}</h1>
+                <h4>&</h4>
+                    {this.props.lowTemp > 65 ? 
+                        <h1>Shorts</h1> : <h1>Pants</h1>
+                }
+            </div>
         );
     }
 }
