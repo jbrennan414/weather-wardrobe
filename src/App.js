@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Wardrobe from './wardrobe';
+// import WeatherCard from './weatherCard';
 
 class App extends Component {
 
@@ -60,6 +61,7 @@ class App extends Component {
             lowTemp = {lowTemp}
             weatherID = {weatherID}
           />
+          {/* <WeatherCard /> */}
         </div>
       </div>
     );
