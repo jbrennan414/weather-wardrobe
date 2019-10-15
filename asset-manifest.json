@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jpb55116/weather-wardrobe/static/css/main.bb3ed7ad.chunk.css",
+    "main.css": "/jpb55116/weather-wardrobe/static/css/main.b5c19e9b.chunk.css",
     "main.js": "/jpb55116/weather-wardrobe/static/js/main.88df4072.chunk.js",
     "main.js.map": "/jpb55116/weather-wardrobe/static/js/main.88df4072.chunk.js.map",
     "runtime-main.js": "/jpb55116/weather-wardrobe/static/js/runtime-main.4f2f6747.js",
@@ -8,8 +8,8 @@
     "static/js/2.2a098cf8.chunk.js": "/jpb55116/weather-wardrobe/static/js/2.2a098cf8.chunk.js",
     "static/js/2.2a098cf8.chunk.js.map": "/jpb55116/weather-wardrobe/static/js/2.2a098cf8.chunk.js.map",
     "index.html": "/jpb55116/weather-wardrobe/index.html",
-    "precache-manifest.2a4e97ca19e92fdaf86e37996cd092cb.js": "/jpb55116/weather-wardrobe/precache-manifest.2a4e97ca19e92fdaf86e37996cd092cb.js",
+    "precache-manifest.bf35e36d917b0a5a67c0d2fe49c85654.js": "/jpb55116/weather-wardrobe/precache-manifest.bf35e36d917b0a5a67c0d2fe49c85654.js",
     "service-worker.js": "/jpb55116/weather-wardrobe/service-worker.js",
-    "static/css/main.bb3ed7ad.chunk.css.map": "/jpb55116/weather-wardrobe/static/css/main.bb3ed7ad.chunk.css.map"
+    "static/css/main.b5c19e9b.chunk.css.map": "/jpb55116/weather-wardrobe/static/css/main.b5c19e9b.chunk.css.map"
   }
 }
