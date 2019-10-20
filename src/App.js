@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Wardrobe from './wardrobe';
-// import WeatherCard from './weatherCard';
 
 class App extends Component {
 
@@ -23,7 +22,6 @@ class App extends Component {
     fetch('http://api.openweathermap.org/data/2.5/weather?q=denver&APPID='+ process.env.REACT_APP_API_KEY +'&units=imperial')
       .then(res => res.json())
       .then((data) => {
-        console.log("THIS IS YOUR DATA", data)
         this.setState({ 
           conditions: data, 
           date: today,
@@ -61,7 +59,6 @@ class App extends Component {
             lowTemp = {lowTemp}
             weatherID = {weatherID}
           />
-          {/* <WeatherCard /> */}
         </div>
       </div>
     );
