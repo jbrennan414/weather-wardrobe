@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Wardrobe from './wardrobe';
+import moment from 'moment';
 
 class App extends Component {
 
@@ -22,9 +23,16 @@ class App extends Component {
     fetch('http://api.openweathermap.org/data/2.5/weather?q=denver&APPID='+ process.env.REACT_APP_API_KEY +'&units=imperial')
       .then(res => res.json())
       .then((data) => {
+        var localTime = moment.unix(data.dt).format("LT");
+        var sunrise = moment.unix(data.sys.sunrise).format("LT");
+        var sunset = moment.unix(data.sys.sunset).format("LT");
+
         this.setState({ 
           conditions: data, 
           date: today,
+          currentTime: localTime,
+          sunrise: sunrise,
+          sunset: sunset,
         })
       })
       .catch(console.log)
