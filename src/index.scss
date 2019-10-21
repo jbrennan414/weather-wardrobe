@@ -1,7 +1,7 @@
 html {
   height: 100%;
   background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(purple, black); /* Standard syntax (must be last) */
+  background-image: linear-gradient(rgb(0, 0, 69), black); /* Standard syntax (must be last) */
 }
 
 body {
@@ -14,3 +14,4 @@ body {
 code {
   font-family: 'Vollkorn', serif;
 }
+

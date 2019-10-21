@@ -9,6 +9,8 @@ class App extends Component {
 
   componentDidMount() {
 
+    this.interval = setInterval(() => this.tick(), 1000);
+
     var today;
     var objToday = new Date(),
     weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'),
@@ -23,7 +25,7 @@ class App extends Component {
     fetch('http://api.openweathermap.org/data/2.5/weather?q=denver&APPID='+ process.env.REACT_APP_API_KEY +'&units=imperial')
       .then(res => res.json())
       .then((data) => {
-        var localTime = moment.unix(data.dt).format("LT");
+        var localTime = moment(data.dt).format('MMMM Do YYYY, h:mm:ss a'); // October 20th 2019, 5:17:23 pm
         var sunrise = moment.unix(data.sys.sunrise).format("LT");
         var sunset = moment.unix(data.sys.sunset).format("LT");
 
@@ -33,12 +35,16 @@ class App extends Component {
           currentTime: localTime,
           sunrise: sunrise,
           sunset: sunset,
+          icon: data.weather[0].icon,
         })
       })
       .catch(console.log)
 
-    }
+  }
 
+  tick(){
+    console.log("ok you hit tick")
+  }
 
   render() {
 
@@ -59,6 +65,7 @@ class App extends Component {
         <div className="card-body">
           <h5 className="card-title">Today's Date: {this.state.date}</h5>
           <h6 className="card-subtitle mb-2 text-muted">What should I wear today?</h6>
+          <img src={`http://openweathermap.org/img/wn/${this.state.icon}@2x.png`}></img>
           <h5>Today's Conditions in Denver</h5>
           <h6>High: {highTemp}°F</h6>
           <h6>Low: {lowTemp}°F</h6>

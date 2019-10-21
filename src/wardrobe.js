@@ -45,13 +45,13 @@ class Wardrobe extends Component {
         return (
             <div className="card" style = {style}>
                 {selectedOuterwear !== "" ? (
-                    <div>
+                    <>
                         <h1>{selectedOuterwear}</h1>
                         <h4>&</h4>
-                    </div>
+                    </>
                 ) : ("")}
                     <h1>{selectedTop}</h1>
-                <h4>&</h4>
+                    <h4>&</h4>
                     {this.props.lowTemp > 65 ? 
                         <h1>Shorts</h1> : <h1>Pants</h1>
                 }
