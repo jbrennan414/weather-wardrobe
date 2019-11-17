@@ -65,7 +65,7 @@ class App extends Component {
         <div className="card-body">
           <h5 className="card-title">Today's Date: {this.state.date}</h5>
           <h6 className="card-subtitle mb-2 text-muted">What should I wear today?</h6>
-          <img src={`http://openweathermap.org/img/wn/${this.state.icon}@2x.png`}></img>
+          <img src={`https://openweathermap.org/img/wn/${this.state.icon}@2x.png`}></img>
           <h5>Today's Conditions in Denver</h5>
           <h6>High: {highTemp}°F</h6>
           <h6>Low: {lowTemp}°F</h6>
