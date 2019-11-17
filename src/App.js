@@ -22,7 +22,7 @@ class App extends Component {
     today = dayOfWeek + ", " + curMonth + " " + dayOfMonth;
 
     //fetch our weather data
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=denver&APPID='+ process.env.REACT_APP_API_KEY +'&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=denver&APPID='+ process.env.REACT_APP_API_KEY +'&units=imperial')
       .then(res => res.json())
       .then((data) => {
         var localTime = moment(data.dt).format('MMMM Do YYYY, h:mm:ss a'); // October 20th 2019, 5:17:23 pm
