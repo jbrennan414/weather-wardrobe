@@ -1,4 +1,4 @@
-http://api.openweathermap.org/data/2.5/weather?q=denver&APPID=66ac02b03ce1fdbb4ebcea5949ecc717&units=imperial
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcee8db0-5bb2-4816-beea-9601fbd5b8c9/deploy-status)](https://app.netlify.com/sites/my-weather-wardrobe/deploys)
 
 ## Getting Started 
 This project utilizes openweathermap.org's public API. In order to get this running locally in your environment, you'll need to create an API key. After creating the key, create a `.env` file at the root of the weather-wardrobe directory, and add the new API key to that file using the following syntax: `REACT_APP_API_KEY=************`. After that you should be good to go!
